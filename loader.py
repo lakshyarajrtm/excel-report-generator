@@ -34,6 +34,7 @@ def read_csv(filename, required_cols):
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["quantity"] = pd.to_numeric(df["quantity"], errors="coerce")
     df["revenue"] = pd.to_numeric(df["revenue"], errors="coerce")
+    
     return df
 
     
