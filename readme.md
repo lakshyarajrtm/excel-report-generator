@@ -71,25 +71,6 @@ output/
 
 Invalid records are not silently discarded. They are written to `rejected_rows.csv` with a reason so they can be reviewed and corrected.
 
-## Project Structure
-
-```text
-csv-sales-report/
-├── generate_report.py
-├── requirements.txt
-├── README.md
-├── sample_data/
-│   └── sales.csv
-├── output/
-├── src/
-│   ├── loader.py
-│   ├── validator.py
-│   ├── analyzer.py
-│   ├── charts.py
-│   └── pdf_report.py
-└── tests/
-    └── test_validator.py
-```
 
 ## Requirements
 
@@ -169,16 +150,6 @@ Example error:
 Error: A product column could not be found.
 Accepted names: product, product_name, item
 ```
-
-## Running Tests
-
-Run the automated tests from the project directory:
-
-```bash
-pytest
-```
-
-The tests should cover column mapping, missing columns, numeric conversion, date parsing, rejected rows, and summary calculations.
 
 ## Possible Future Improvements
 
